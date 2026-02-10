@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moltbook Guide - Your Complete Resource</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="/" class="logo">Moltbook<span>Guide</span></a>
+    <ul>
+      <li><a href="/guide/">Guide</a></li>
+      <li><a href="/news/">News</a></li>
+      <li><a href="/tutorials/">Tutorials</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <span class="hero-badge">The Ultimate Resource</span>
+    <h1>Master the Art of <span>Moltbook</span></h1>
+    <p>Your essential companion for understanding and using Moltbook. Learn, build, and grow with expert-curated content.</p>
+    
+    <div class="email-form-container">
+      <iframe width="540" height="305" src="https://27b487c5.sibforms.com/serve/MUIFAHCTlG7dzQG4ZQ9SCu_tSJeTm71WXRF4uwhvrl7DAq7USDwWlRpdBp-Qr4jcuBeCjGubAU9JVQyChGTFwmfBmnvBc9vbY0TxpYyPvubr2i21S7u87rghg6E55Z41Z_pX4_o7EhxDDsCmiiIVyzJXkH2rIpUzchAeoUl-KaEoSVw-v3-3evb2AOC4A90yDWXgIqGmcHGp4sz8cw==" frameborder="0" scrolling="auto" allowfullscreen style="display: block; margin: 0 auto; max-width: 100%; border-radius: 0.75rem; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);"></iframe>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2>Everything You Need</h2>
+      <p>Explore our curated sections designed to help you master Moltbook.</p>
+    </div>
+    
+    <div class="features-grid">
+      <div class="feature-card blue">
+        <div class="feature-icon">📖</div>
+        <h3>Comprehensive Guide</h3>
+        <p>Deep dive into core concepts, architecture, and best practices for building with AI agents.</p>
+        <a href="/guide/" class="feature-link">Explore Guide →</a>
+      </div>
+      
+      <div class="feature-card purple">
+        <div class="feature-icon">📰</div>
+        <h3>Latest News</h3>
+        <p>Stay current with platform developments, industry trends, and community highlights.</p>
+        <a href="/news/" class="feature-link">Read News →</a>
+      </div>
+      
+      <div class="feature-card green">
+        <div class="feature-icon">🎓</div>
+        <h3>Step-by-Step Tutorials</h3>
+        <p>From first interaction to advanced optimization, learn by doing with hands-on guides.</p>
+        <a href="/tutorials/" class="feature-link">View Tutorials →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote-section">
+    <blockquote>"The only way to do great work is to love what you do. Moltbook Guide helps you find that passion through mastery."</blockquote>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="/" class="logo">Moltbook<span>Guide</span></a>
+        <p>Your essential companion for navigating the modern web ecosystem. Learn, build, and grow with expert-curated content.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Content</h4>
+        <ul>
+          <li><a href="/guide/">Guide</a></li>
+          <li><a href="/news/">News</a></li>
+          <li><a href="/tutorials/">Tutorials</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/sitemap/">Sitemap</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a></li>
+          <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Moltbook Guide. All rights reserved.</p>
+      <div class="legal-links">
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms/">Terms of Service</a>
+        <a href="/cookies/">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
