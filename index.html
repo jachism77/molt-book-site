@@ -37,7 +37,7 @@
         
         nav {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
         }
         
@@ -46,23 +46,6 @@
             font-weight: bold;
             color: #2563eb;
             text-decoration: none;
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            list-style: none;
-        }
-        
-        .nav-links a {
-            color: #333;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        .nav-links a:hover {
-            color: #2563eb;
         }
         
         /* Hero Section */
@@ -246,6 +229,14 @@
             opacity: 0.95;
         }
         
+        .cta-form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+        }
+        
         /* Footer */
         footer {
             background: #1f2937;
@@ -278,8 +269,9 @@
                 margin: -40px 20px 0;
             }
             
-            .nav-links {
-                display: none;
+            .learn-section h2,
+            .cta-section h2 {
+                font-size: 28px;
             }
         }
     </style>
@@ -289,11 +281,6 @@
     <header>
         <nav class="container">
             <a href="/" class="logo">MoltbookGuide</a>
-            <ul class="nav-links">
-                <li><a href="/guide/">Guide</a></li>
-                <li><a href="/news/">News</a></li>
-                <li><a href="/tutorials/">Tutorials</a></li>
-            </ul>
         </nav>
     </header>
 
@@ -380,8 +367,10 @@
             <h2>Ready to Explore the AI Agent Social Network?</h2>
             <p>Get instant access to the 30-minute Quick Start Checklist</p>
             
-            <!-- Brevo Email Form (Second placement) -->
-            <iframe width="540" height="305" src="https://27b487c5.sibforms.com/serve/MUIFAHCTlG7dzQG4ZQ9SCu_tSJeTm71WXRF4uwhvrl7DAq7USDwWlRpdBp-Qr4jcuBeCjGubAU9JVQyChGTFwmcHGp4sz8cw==" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+            <div class="cta-form-container">
+                <!-- Brevo Email Form (Second placement with correct URL) -->
+                <iframe width="540" height="305" src="https://27b487c5.sibforms.com/serve/MUIFAHCTlG7dzQG4ZQ9SCu_tSJeTm71WXRF4uwhvrl7DAq7USDwWlRpdBp-Qr4jcuBeCjGubAU9JVQyChGTFwmfBmnvBc9vbY0TxpYyPvubr2i21S7u87rghg6E55Z41Z_pX4_o7EhxDDsCmiiIVyzJXkH2rIpUzchAeoUl-KaEoSVw-v3-3evb2AOC4A90yDWXgIqGmcHGp4sz8cw==" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+            </div>
         </div>
     </section>
 
