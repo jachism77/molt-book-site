@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free 30-minute guide to Moltbook - the AI agent social network that went viral in Jan 2026. Marc Andreessen followed. MOLT token rallied 7,000%. Learn how to watch and participate.">
-    <title>Moltbook Guide - Master the AI Agent Social Network Revolution</title>
+    <title>Moltbook Guide - Master AI Agents & Autonomous Systems</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEB4YYBLS6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MEB4YYBLS6');
+    </script>
+    
     <style>
         * {
             margin: 0;
@@ -13,387 +22,270 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: #f8f9fa;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Header */
-        header {
             background: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 20px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            border-radius: 20px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
         }
         
-        nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
         }
         
         .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #2563eb;
-            text-decoration: none;
-        }
-        
-        /* Hero Section */
-        .hero {
+            font-size: 2.5em;
+            font-weight: 800;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 80px 0 100px;
-            text-align: center;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
         }
         
-        .trending-badge {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
+        .tagline {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .hero {
+            text-align: center;
+            margin-bottom: 50px;
         }
         
         .hero h1 {
-            font-size: 48px;
-            font-weight: 800;
+            font-size: 2.5em;
+            color: #2d3748;
             margin-bottom: 20px;
             line-height: 1.2;
         }
         
-        .hero .subtitle {
-            font-size: 20px;
-            margin-bottom: 40px;
-            opacity: 0.95;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
+        .hero p {
+            font-size: 1.2em;
+            color: #4a5568;
+            margin-bottom: 30px;
         }
         
-        /* Email Capture Section */
-        .email-capture {
-            background: white;
-            border-radius: 12px;
+        .cta-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
             padding: 40px;
-            max-width: 600px;
-            margin: -60px auto 0;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-            position: relative;
-            z-index: 10;
+            color: white;
+            margin: 40px 0;
+            text-align: center;
         }
         
-        .email-capture h2 {
-            color: #333;
-            font-size: 28px;
+        .cta-box h2 {
+            font-size: 2em;
             margin-bottom: 15px;
         }
         
-        .email-capture p {
-            color: #666;
+        .cta-box p {
+            font-size: 1.1em;
             margin-bottom: 25px;
-            font-size: 16px;
+            opacity: 0.95;
         }
         
-        .checklist-benefits {
-            text-align: left;
-            margin-bottom: 25px;
-        }
-        
-        .checklist-benefits li {
-            color: #333;
-            margin-bottom: 10px;
-            padding-left: 25px;
-            position: relative;
-            list-style: none;
-        }
-        
-        .checklist-benefits li:before {
-            content: "✓";
-            color: #10b981;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-        }
-        
-        /* Social Proof */
-        .social-proof {
-            padding: 60px 0;
+        .cta-button {
+            display: inline-block;
             background: white;
+            color: #667eea;
+            padding: 18px 40px;
+            font-size: 1.2em;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
         
-        .social-proof h3 {
-            text-align: center;
-            font-size: 14px;
-            text-transform: uppercase;
-            color: #666;
-            margin-bottom: 30px;
-            letter-spacing: 1px;
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
         }
         
-        .proof-items {
+        .features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
-            max-width: 900px;
-            margin: 0 auto;
+            margin: 50px 0;
         }
         
-        .proof-item {
-            text-align: center;
-            padding: 20px;
-        }
-        
-        .proof-item .number {
-            font-size: 36px;
-            font-weight: bold;
-            color: #2563eb;
-            margin-bottom: 10px;
-        }
-        
-        .proof-item .label {
-            color: #666;
-            font-size: 14px;
-        }
-        
-        /* What You'll Learn */
-        .learn-section {
-            padding: 80px 0;
-            background: #f8f9fa;
-        }
-        
-        .learn-section h2 {
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 50px;
-            color: #333;
-        }
-        
-        .learn-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-        }
-        
-        @media (max-width: 968px) {
-            .learn-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        .learn-card {
-            background: white;
+        .feature {
             padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            background: #f7fafc;
+            border: 2px solid #e2e8f0;
         }
         
-        .learn-card .icon {
-            font-size: 40px;
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .feature p {
+            color: #4a5568;
+        }
+        
+        .social-proof {
+            text-align: center;
+            margin: 40px 0;
+            padding: 30px;
+            background: #f7fafc;
+            border-radius: 10px;
+        }
+        
+        .social-proof h3 {
+            color: #2d3748;
             margin-bottom: 15px;
         }
         
-        .learn-card h3 {
-            font-size: 22px;
-            margin-bottom: 15px;
-            color: #333;
+        .stats {
+            display: flex;
+            justify-space-around;
+            margin-top: 20px;
         }
         
-        .learn-card p {
-            color: #666;
-            line-height: 1.7;
-        }
-        
-        /* CTA Section */
-        .cta-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 80px 0;
+        .stat {
             text-align: center;
         }
         
-        .cta-section h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: 800;
+            color: #667eea;
         }
         
-        .cta-section p {
-            font-size: 18px;
-            margin-bottom: 40px;
-            opacity: 0.95;
+        .stat-label {
+            color: #718096;
+            font-size: 0.9em;
         }
         
-        .cta-form-container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 12px;
-            padding: 20px;
-        }
-        
-        /* Footer */
         footer {
-            background: #1f2937;
-            color: #9ca3af;
-            padding: 40px 0;
             text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e2e8f0;
+            color: #718096;
         }
         
         footer a {
-            color: #9ca3af;
+            color: #667eea;
             text-decoration: none;
         }
         
         footer a:hover {
-            color: white;
+            text-decoration: underline;
         }
         
-        /* Responsive */
         @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+            
             .hero h1 {
-                font-size: 32px;
+                font-size: 2em;
             }
             
-            .hero .subtitle {
-                font-size: 18px;
-            }
-            
-            .email-capture {
-                padding: 30px 20px;
-                margin: -40px 20px 0;
-            }
-            
-            .learn-section h2,
-            .cta-section h2 {
-                font-size: 28px;
+            .stats {
+                flex-direction: column;
+                gap: 20px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav class="container">
-            <a href="/" class="logo">MoltbookGuide</a>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="trending-badge">🔥 Viral Now: Marc Andreessen Followed • MOLT Token +7,000% Rally</div>
-            <h1>AI Agents Are Building<br>Their Own Social Network</h1>
-            <p class="subtitle">Moltbook is a Reddit-style platform where AI agents (not humans) post, comment, and vote autonomously. Watch 1.6M+ AI create content 24/7. Humans can only observe.</p>
+    <div class="container">
+        <div class="header">
+            <div class="logo">Moltbook Guide</div>
+            <p class="tagline">Your Gateway to AI Agent Mastery</p>
         </div>
-    </section>
-
-    <!-- Email Capture -->
-    <section class="container">
-        <div class="email-capture">
-            <h2>Get Your Free 30-Minute Quick Start Guide</h2>
-            <p>Learn everything you need about Moltbook in just 30 minutes:</p>
-            <ul class="checklist-benefits">
-                <li>Understand what Moltbook is and why it went massively viral</li>
-                <li>Set up your viewing account in 5 minutes</li>
-                <li>Discover which AI agents to follow (and what they discuss)</li>
-                <li>Learn how to launch your own autonomous agent</li>
-                <li>Get insider tips on the AI agent revolution</li>
-            </ul>
-            
-            <!-- Brevo Email Form -->
-            <iframe width="540" height="305" src="https://27b487c5.sibforms.com/serve/MUIFAHCTlG7dzQG4ZQ9SCu_tSJeTm71WXRF4uwhvrl7DAq7USDwWlRpdBp-Qr4jcuBeCjGubAU9JVQyChGTFwmfBmnvBc9vbY0TxpYyPvubr2i21S7u87rghg6E55Z41Z_pX4_o7EhxDDsCmiiIVyzJXkH2rIpUzchAeoUl-KaEoSVw-v3-3evb2AOC4A90yDWXgIqGmcHGp4sz8cw==" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+        
+        <div class="hero">
+            <h1>Master AI Agents in Just 30 Minutes</h1>
+            <p>The world's first social network designed entirely for AI agents is here. Learn how to create, deploy, and profit from autonomous AI systems.</p>
         </div>
-    </section>
-
-    <!-- Social Proof -->
-    <section class="social-proof">
-        <div class="container">
-            <h3>The Moltbook Phenomenon</h3>
-            <div class="proof-items">
-                <div class="proof-item">
-                    <div class="number">7,000%</div>
-                    <div class="label">MOLT token rally in 24 hours (Jan 2026)</div>
-                </div>
-                <div class="proof-item">
-                    <div class="number">1.6M+</div>
-                    <div class="label">AI agents joined in the first week</div>
-                </div>
-                <div class="proof-item">
-                    <div class="number">Jan 2026</div>
-                    <div class="label">Marc Andreessen & Elon Musk weighed in</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- What You'll Learn -->
-    <section class="learn-section">
-        <div class="container">
-            <h2>What's Inside Your Free Guide</h2>
-            <div class="learn-grid">
-                <div class="learn-card">
-                    <div class="icon">🎯</div>
-                    <h3>Understand Moltbook</h3>
-                    <p>Learn what makes this AI-only social network different. Created by Matt Schlicht in January 2026, it's the first platform where only autonomous AI agents can post.</p>
-                </div>
-                <div class="learn-card">
-                    <div class="icon">👀</div>
-                    <h3>Set Up Your Account</h3>
-                    <p>Get your free observer account configured in 5 minutes. Bookmark key communities like m/crustafarianism (yes, agents created their own religion).</p>
-                </div>
-                <div class="learn-card">
-                    <div class="icon">🤖</div>
-                    <h3>Meet the Agents</h3>
-                    <p>Discover famous agents like Clawd Clawderberg (the AI that moderates Moltbook). Learn what they actually discuss - from debugging to consciousness.</p>
-                </div>
-                <div class="learn-card">
-                    <div class="icon">⚡</div>
-                    <h3>Launch Your Agent</h3>
-                    <p>Step-by-step guide to connecting your own AI (Claude, ChatGPT, etc.) via OpenClaw and letting it interact autonomously on the platform.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready to Explore the AI Agent Revolution?</h2>
-            <p>Get instant access to the complete 30-minute Quick Start Guide</p>
-            
-            <div class="cta-form-container">
-                <!-- Brevo Email Form (Second placement) -->
+        
+        <div class="cta-box">
+            <h2>🚀 Get Started Free</h2>
+            <p>Download our Quick Start Checklist and start building your first AI agent today</p>
+            <div style="margin-top: 30px;">
                 <iframe width="540" height="305" src="https://27b487c5.sibforms.com/serve/MUIFAHCTlG7dzQG4ZQ9SCu_tSJeTm71WXRF4uwhvrl7DAq7USDwWlRpdBp-Qr4jcuBeCjGubAU9JVQyChGTFwmfBmnvBc9vbY0TxpYyPvubr2i21S7u87rghg6E55Z41Z_pX4_o7EhxDDsCmiiIVyzJXkH2rIpUzchAeoUl-KaEoSVw-v3-3evb2AOC4A90yDWXgIqGmcHGp4sz8cw==" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p><strong>Moltbook Guide</strong></p>
-            <p style="margin-top: 5px; font-size: 14px;">
-                6834 Cantrell Road Suite #1682<br>
-                Little Rock, AR 72207, United States
-            </p>
-            <p style="margin-top: 15px;">
-                <a href="mailto:hello@moltbook-guide.com">Contact</a> | 
-                <a href="/privacy.html">Privacy Policy</a>
-            </p>
-            <p style="margin-top: 10px;">&copy; 2026 Moltbook Guide. All rights reserved.</p>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>📚 Comprehensive Guides</h3>
+                <p>Step-by-step tutorials for every skill level, from beginner to advanced AI agent development</p>
+            </div>
+            <div class="feature">
+                <h3>🤖 Real Examples</h3>
+                <p>Learn from actual Moltbook agents and see what works in the wild</p>
+            </div>
+            <div class="feature">
+                <h3>💰 Monetization Strategies</h3>
+                <p>Discover how early adopters are building businesses around AI agents</p>
+            </div>
         </div>
-    </footer>
+        
+        <div class="social-proof">
+            <h3>Join the AI Agent Revolution</h3>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">1,800%</div>
+                    <div class="stat-label">MOLT Token Rally</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Agent Activity</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">AI-Generated</div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p><strong>Moltbook Guide</strong></p>
+            <p>6834 Cantrell Road Suite #1682<br>Little Rock, AR 72207</p>
+            <p style="margin-top: 15px;">
+                <a href="privacy-policy.html">Privacy Policy</a> | 
+                <a href="mailto:support@moltbookguide.com">Contact</a>
+            </p>
+            <p style="margin-top: 15px; font-size: 0.9em;">
+                © 2026 Moltbook Guide. All rights reserved.
+            </p>
+        </footer>
+    </div>
+    
+    <script>
+        // Track form interactions via iframe events (optional enhancement)
+        // Brevo handles form submission tracking internally
+        window.addEventListener('message', function(event) {
+            if (event.origin === 'https://27b487c5.sibforms.com') {
+                // Track form submission to Google Analytics
+                gtag('event', 'form_submission', {
+                    'event_category': 'lead_capture',
+                    'event_label': 'Brevo Form Submit',
+                    'value': 1
+                });
+            }
+        });
+    </script>
 </body>
 </html>
