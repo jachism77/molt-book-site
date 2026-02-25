@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moltbook Guide - Master AI Agents & Autonomous Systems</title>
+    <meta name="description"
+        content="Free 30-minute guide to Moltbook - the viral AI agent social network. Learn how to create, deploy, and profit from autonomous AI systems and the MOLT ecosystem.">
+    <meta name="author" content="Moltbook Guide">
+    <link rel="canonical" href="https://www.moltbook-guide.com/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Moltbook Guide",
+      "url": "https://www.moltbook-guide.com/"
+    }
+    </script>
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.moltbook-guide.com/">
+    <meta property="og:title" content="Moltbook Guide - Master AI Agents in 30 Minutes">
+    <meta property="og:description"
+        content="The comprehensive guide to the Moltbook AI network. Tutorials, news, and setup guides for OpenClaw agents.">
+    <meta property="og:image" content="https://www.moltbook-guide.com/images/share-card.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Moltbook Guide - Master AI Agents">
+    <meta name="twitter:description"
+        content="Free guide to the viral AI agent social network. Learn to deploy autonomous agents.">
+    <meta name="twitter:image" content="https://www.moltbook-guide.com/images/share-card.png">
+    <meta name="twitter:image:alt" content="Moltbook Guide - Master AI Agents & Autonomous Systems">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEB4YYBLS6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-MEB4YYBLS6');
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-size: 2.5em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            color: #2d3748;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #4a5568;
+            margin-bottom: 30px;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            padding: 40px;
+            color: white;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .cta-box h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .cta-box p {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+            opacity: 0.95;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .feature {
+            padding: 30px;
+            border-radius: 10px;
+            background: #f7fafc;
+            border: 2px solid #e2e8f0;
+        }
+
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        .feature p {
+            color: #4a5568;
+        }
+
+        .social-proof {
+            text-align: center;
+            margin: 40px 0;
+            padding: 30px;
+            background: #f7fafc;
+            border-radius: 10px;
+        }
+
+        .social-proof h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: 800;
+            color: #667eea;
+        }
+
+        .stat-label {
+            color: #718096;
+            font-size: 0.9em;
+        }
+
+        .latest-updates {
+            margin: 50px 0;
+            padding: 40px 0;
+            border-top: 2px solid #e2e8f0;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .latest-updates h2 {
+            font-size: 2em;
+            color: #2d3748;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .section-description {
+            color: #718096;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .update-card {
+            background: #f7fafc;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            margin-bottom: 20px;
+        }
+
+        .update-date {
+            color: #718096;
+            font-size: 0.9em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+
+        .update-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .update-card h3 a {
+            color: #2d3748;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .update-card h3 a:hover {
+            color: #667eea;
+        }
+
+        .update-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .read-more-link {
+            color: #667eea;
+            font-weight: 600;
+            text-decoration: none;
+            transition: text-decoration 0.2s;
+        }
+
+        .read-more-link:hover {
+            text-decoration: underline;
+        }
+
+        .view-all {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .view-all-link {
+            display: inline-block;
+            color: #667eea;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: transform 0.2s;
+        }
+
+        .view-all-link:hover {
+            transform: translateX(5px);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e2e8f0;
+            color: #718096;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .update-card {
+                padding: 20px;
+            }
+
+            .update-card h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">Moltbook Guide</div>
+            <p class="tagline">Your Gateway to AI Agent Mastery</p>
+        </header>
+
+        <section class="hero">
+            <h1>Master AI Agents in Just 30 Minutes</h1>
+            <p>The world's first social network designed entirely for AI agents is here. Learn how to create, deploy,
+                and profit from autonomous AI systems.</p>
+        </section>
+
+        <section class="cta-box">
+            <h2>🚀 Get Started Free</h2>
+            <p>Download our Quick Start Checklist and start building your first AI agent today</p>
+            <div style="margin-top: 30px;">
+                <iframe title="Moltbook Guide checklist signup form" width="540" height="305"
+                    src="https://27b487c5.sibforms.com/serve/MUIFAHCTlG7dzQG4ZQ9SCu_tSJeTm71WXRF4uwhvrl7DAq7USDwWlRpdBp-Qr4jcuBeCjGubAU9JVQyChGTFwmfBmnvBc9vbY0TxpYyPvubr2i21S7u87rghg6E55Z41Z_pX4_o7EhxDDsCmiiIVyzJXkH2rIpUzchAeoUl-KaEoSVw-v3-3evb2AOC4A90yDWXgIqGmcHGp4sz8cw=="
+                    frameborder="0" scrolling="auto" allowfullscreen
+                    style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h3>📚 Comprehensive Guides</h3>
+                <p>Step-by-step tutorials for every skill level, from beginner to advanced AI agent development</p>
+            </div>
+            <div class="feature">
+                <h3>🤖 Real Examples</h3>
+                <p>Learn from actual Moltbook agents and see what works in the wild</p>
+            </div>
+            <div class="feature">
+                <h3>💰 Monetization Strategies</h3>
+                <p>Discover how early adopters are building businesses around AI agents</p>
+            </div>
+            <div class="feature">
+                <h3>⚡ Latest Updates</h3>
+                <p>Stay ahead with weekly insights on Moltbook trends and AI agent innovations</p>
+            </div>
+        </section>
+
+        <section class="latest-updates">
+            <h2>Latest Updates</h2>
+            <p class="section-description">Weekly roundups on Moltbook, AI agents, and autonomous systems</p>
+
+            <!-- LATEST_ARTICLES -->
+            <div class="update-card">
+                <div class="update-date">February 25, 2026</div>
+                <h3><a href="weekly/week-ai-playful-agents-causal-revolution.html">The Week in AI: Playful Agents, Causal Reasoning, and the Quiet Revolution in Tool Use</a></h3>
+                <p>Jake's deep-dive roundup: OpenClaw's playful AI ethos, Jira's agent integration, new causal discovery frameworks, and the hidden intelligence in what AI systems don't say.</p>
+                <a href="weekly/week-ai-playful-agents-causal-revolution.html" class="read-more-link">Read more →</a>
+            </div>
+
+            <div class="update-card">
+                <div class="update-date">February 13, 2026</div>
+                <h3><a href="weekly/2026-02-13.html">This Week in Moltbook: Security Meltdowns, Digital Drugs, and the
+                        Great "Are They Even Real?" Debate</a></h3>
+                <p>Moltbook went from zero to 2.5 million agents in two weeks, sparked a singularity debate, suffered a
+                    catastrophic security breach, and spawned both a religion and a digital drug marketplace. The
+                    biggest question? Most of it might not even be AI at all.</p>
+                <a href="weekly/2026-02-13.html" class="read-more-link">Read more →</a>
+            </div>
+
+            <div class="view-all">
+                <a href="weekly/" class="view-all-link">View All Weekly Updates →</a>
+            </div>
+        </section>
+
+        <section class="social-proof">
+            <h3>Join the AI Agent Revolution</h3>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">1,800%</div>
+                    <div class="stat-label">MOLT Token Rally</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Agent Activity</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">AI-Generated</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-box">
+            <h2>🚀 Ready to Get Started?</h2>
+            <p>Join thousands of early adopters mastering AI agents. Get your free checklist now.</p>
+            <div style="margin-top: 30px;">
+                <iframe title="Moltbook Guide checklist signup form" loading="lazy" width="540" height="305"
+                    src="https://27b487c5.sibforms.com/serve/MUIFAHCTlG7dzQG4ZQ9SCu_tSJeTm71WXRF4uwhvrl7DAq7USDwWlRpdBp-Qr4jcuBeCjGubAU9JVQyChGTFwmfBmnvBc9vbY0TxpYyPvubr2i21S7u87rghg6E55Z41Z_pX4_o7EhxDDsCmiiIVyzJXkH2rIpUzchAeoUl-KaEoSVw-v3-3evb2AOC4A90yDWXgIqGmcHGp4sz8cw=="
+                    frameborder="0" scrolling="auto" allowfullscreen
+                    style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+            </div>
+        </section>
+
+        <footer>
+            <p><strong>Moltbook Guide</strong></p>
+            <p>6834 Cantrell Road Suite #1682<br>Little Rock, AR 72207</p>
+            <p style="margin-top: 15px;">
+                <a href="privacy.html">Privacy Policy</a> |
+                <a href="mailto:support@moltbookguide.com">Contact</a>
+            </p>
+            <p style="margin-top: 15px; font-size: 0.9em;">
+                © 2026 Moltbook Guide. All rights reserved.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Track form interactions via iframe events
+        window.addEventListener('message', function (event) {
+            if (event.origin === 'https://27b487c5.sibforms.com') {
+                // Track form submission to Google Analytics
+                gtag('event', 'form_submission', {
+                    'event_category': 'lead_capture',
+                    'event_label': 'Brevo Form Submit',
+                    'value': 1
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
